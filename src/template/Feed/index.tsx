@@ -1,14 +1,19 @@
-import ExampleComponent from 'components/ExampleComponent';
 import React from 'react';
+import Sidebar from 'components/Sidebar';
+import Center from 'components/Center';
+import LeftBar from 'components/LeftBar';
 import * as S from './styles';
 
-const ExampleTemplate = () => {
+const Feed = () => {
     return (
         <S.Container>
-            <S.Title>Treinamento Introdutório de Front</S.Title>
-            <S.Comment>Template criado em Março de 2023</S.Comment>
-            <ExampleComponent width="128px" />
+            <Sidebar />
+            <S.Divider />
+            <Center />
+            <S.Divider />
+            <LeftBar />
         </S.Container>
     );
 };
-export default ExampleTemplate;
+
+export default Feed;
